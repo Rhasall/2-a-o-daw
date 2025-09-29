@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UD2 - Actividades Funciones</title>
+</head>
+<body>
+
+<script>
+  // SOY ELIEZER NICOLAS PEREZ
+  // 2º AÑO DE DAW DESARROLLO WEB CLIENTE
+
+  function actividad1() 
+    {
+        let texto = prompt("escribe cositas:");
+        alert("Esto es lo que has escrito: " + texto);
+        console.log("Esto es lo que has escrito:", texto);
+    }
+
+  function actividad2() {
+    // Función normal para calcular el cubo
+    function cubo(numero) 
+    {
+      return numero * numero * numero;
+    }
+    const cuboArrow = (numero) => numero * numero * numero;
+
+    // muestro en consola papi
+            console.log(cubo(3));
+            console.log(cuboArrow(3));
+            // muestro en alert para facil ver
+            alert(cubo(3));
+            alert(cuboArrow(3));
+  }
+
+  // Llamada de las funciones
+  actividad1();
+  actividad2();
+
+</script>
+</body>
+</html>
