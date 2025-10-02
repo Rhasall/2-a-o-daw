@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UD2 - Actividades Funciones</title>
+</head>
+<body>
+
+<script>
+  // SOY ELIEZER NICOLAS PEREZ
+  // 2º AÑO DE DAW DESARROLLO WEB CLIENTE
+
+function actividad1(){
+let numero = prompt("Introduce un número:");
+                numero = Number(numero);
+                if (numero > 0) {
+                    alert("El numero es positivo.");
+
+                } else if (numero < 0) {
+                    alert("El numero es negativo.");
+
+                } else if (numero === 0) {
+                    alert("El numero es cero.");
+
+                } else {
+                    alert("Eso no es un numero válido.");
+                }
+              }
+
+function actividad2(){
+  let edad = prompt("Dime una edad:");
+                edad = Number(edad);
+
+                if (edad >= 0 && edad < 18) {
+                    alert("eres menor de edad, todo un bebe ");
+
+                } else if (edad >= 18 && edad < 65) {
+                    alert("es un adulto");
+
+                } else if (edad >= 65) {
+                    alert("es un ancianito");
+                } else {
+                    alert("cuidaito con esa edad, aqui edad negativa no");
+                }
+
+}
+function actividad3(){
+  let num1 = prompt("Dime el primer numero:");
+                let num2 = prompt("Dime el segundo numero:");
+
+                if (num1 > num2) {
+                    alert("este es el numero mayor: "+num1);
+                } else {
+                    alert("este es el numero mayor: "+num2);
+                }
+
+}
+function actividad4(){
+  let nota1 = Number(prompt("Dime la primera nota:"));
+                let nota2 = Number(prompt("Dime la segunda nota:"));
+                let nota3 = Number(prompt("Dime la tercera nota:"));
+
+                let media = (nota1 + nota2 + nota3) / 3;
+
+                if (media>=5) {
+                    alert("aprobado con un: "+media);
+                } else {
+                    alert("suspenso con un: "+media);
+                }
+              }
+
+function actividad6(){
+  let numero = prompt("Ingresa un numero del 1 al 12 para saber que mes es: ");
+                numero = Number(numero);
+                let mes;
+                if (numero >=1 && numero <=12) 
+                {
+                        switch (numero) 
+                        {
+                            case 1:
+                                mes = "Enero";
+                                alert("el mes es "+mes);
+                                break;
+                            case 2:
+                                mes = "Febrero";
+                                alert("el mes es "+mes);
+                                break;
+                            case 3:
+                                mes = "Marzo";
+                                alert("el mes es "+mes);
+                                break;
+                            case 4:
+                                mes = "Abril";
+                                alert("el mes es "+mes);
+                                break;
+                            case 5:
+                                mes = "Mayo";
+                                alert("el mes es "+mes);
+                                break;
+                            case 6:
+                                mes = "Junio";
+                                alert("el mes es "+mes);
+                                break;
+                            case 7:
+                                mes = "Julio";
+                                alert("el mes es "+mes);
+                                break;
+                            case 8:
+                                mes = "Agosto";
+                                alert("el mes es "+mes);
+                                break;
+                            case 9:
+                                mes = "Septiembre";
+                                alert("el mes es "+mes);
+                                break;
+                            case 10:
+                                mes = "Octubre";
+                                alert("el mes es "+mes);
+                                break;
+                            case 11:
+                                mes = "Noviembre";
+                                alert("el mes es "+mes);
+                                break;
+                            case 12:
+                                mes = "Diciembre";
+                                alert("el mes es "+mes);
+                                break;
+                        }
+            }              
+            else { alert("Solo numeros del 1 al 12");}
+
+}
+function actividad7(){
+  let menu = prompt("¿Que quieres carne, pescado o verdura?");
+                let bebida;
+
+                    switch (menu) {
+                    case "carne":
+                        bebida = "Vino tinto";
+                        break;
+                    case "pescado":
+                        bebida = "Vino blanco";
+                        break;
+                    case "verdura":
+                        bebida = "Agua";
+                        break;
+                    default:
+                        bebida = "pon solo carne, pescado o verdura.";
+                        break;
+                    }
+                    alert(bebida);
+
+}
+function actividad8(){
+  for (let x = 2; x <= 30; x += 2) {
+            if (x % 3 !== 0) {
+            alert(x);
+            // console.log(x); este seria el bueno, pero para probar que el bucle funciona 
+            //uso el alert
+    }
+}
+
+}
+function actividad9(){
+  for (let x = 5; x <= 300; x++) {
+            alert(Math.pow(2,x));
+            // console.log(Math.pow(2, i)); 
+            // sigo prefiriendo alert parea pruebas y ver que el bucle funciona
+        }
+
+}
+function actividad10(){
+  let n = parseInt(prompt("Dime un numero entero"));
+        let factorial = 1;
+        for (let x = 1; x <= n; x++) {
+            factorial *= x;
+        }
+        alert("El factorial de " + n + " es: " + factorial);
+        console.log("El factorial de " + n + " es: " + factorial);
+
+        // pongo alert para interaccionar y console para mostrar
+
+}
+function actividad11(){
+  let dibujo = "";
+
+        for (let x = 1; x <= 13; x++) {
+            dibujo += "*";
+            console.log(dibujo);
+        }
+
+}
+function actividad12(){
+  let caracter = prompt("Dime que caracter dibujo");
+
+            let x = 1; //inicializo o si no  no funca
+            let patron = "";
+
+            // Bucle while
+            while (x <= 13) {
+                patron += caracter;
+                console.log(patron);
+                x++;
+            }
+
+}
+function actividad13(){
+  let caracter = prompt("Dime que caracter dibujo");
+        let Numlineas = parseInt(prompt("¿Cuántas líneas quieres imprimir?"));
+        let x = 1;
+        let patron = "";
+        do {
+            patron += caracter;
+            console.log(patron);
+            x++;
+        } while (x <= Numlineas);
+
+}function actividad14(){
+  let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+        let intento;
+        while (true) {
+            intento = prompt("Adivina el numero de 1 y 100, Pulsa Cancelar para salir:");
+            if (intento === null) {
+                alert("Adios cobarde");
+                break;
+            }
+            intento = parseInt(intento);
+            if (intento === numeroSecreto) {
+                alert("Bien hecho, acertaste mentecato, este era el numero: " + numeroSecreto);
+                break;
+            } else if (intento < numeroSecreto) {
+                alert("El numero es MAYOR que " + intento);
+            } else {
+                alert("El numero es MENOR que " + intento);
+            }
+        }
+
+}
+
+
+  // Llamada de las funciones
+  actividad11();
+  actividad7();
+
+</script>
+</body>
+</html>

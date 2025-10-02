@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UD2 - Actividades Funciones</title>
+</head>
+<body>
+
+<script>
+  // SOY ELIEZER NICOLAS PEREZ
+  // 2º AÑO DE DAW DESARROLLO WEB CLIENTE
+
+        // Parte a
+            let radio = parseFloat(prompt("dime el radio del circulo:"));
+
+            // PArte b 1 incluyendo la parte c
+            function calcularArea(r) {
+                return Math.PI * r * r;
+            }
+
+            // PArte b 2 incluyendo la parte c
+            function calcularPerimetro(r) {
+                return 2 * Math.PI * r;
+            }
+
+            // Parte d
+            let area = calcularArea(radio);
+            let perimetro = calcularPerimetro(radio);
+
+            // Parte e
+            alert("el area del circulo es: " + area);
+            alert("el perimetro del circulo es: " + perimetro);
+            // te pongo que imprima en consola tambien para verlo en la captura que funcoiona
+            console.log(area);
+            console.log(perimetro);
+</script>
+</body>
+</html>
